@@ -3,7 +3,7 @@
 }
 .logo {
   /* margin-top: 15px; */
-  background-image: url("../../assets/logo.png");
+  background-image: url('../../assets/logo.png');
   height: 100px;
   width: 300px;
   z-index: 1;
