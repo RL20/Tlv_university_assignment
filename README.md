@@ -74,7 +74,7 @@ MediaRecorder.pdf = pdf;
 |               |                                            | create footer component                                                  | :black_square_button: | **4 hours**   |     |
 |               |                                            | create Cover Page component                                              | :black_square_button: | **3 hours**   |     |
 |               |                                            | create T.O.C component                                                   | :black_square_button: | **9 hours**   |     |
-|               |                                            | accessibility -According to the standard and the requirements of the law | :black_square_button: | TBD           |     |
+|               |                                            | accessibility -According to the standard and the requirements of the law | :black_square_button: | **TBD**       |     |
 |               | **pdf Generator**                          |                                                                          |                       |               |     |
 |               |                                            | use puppeteer package to generate pdf from recived html                  | :white_check_mark:    | **9 hours**   |     |
 |               |                                            |                                                                          |                       |               |     |
