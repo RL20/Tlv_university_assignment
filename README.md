@@ -57,6 +57,35 @@ MediaRecorder.pdf = pdf;
 </div>
 <div dir="auto" align="left">
 
+## **Timeline**
+
+| Type          | Feature                                    | Task                                                                     | Done                  | Time          | Day |
+| ------------- | ------------------------------------------ | ------------------------------------------------------------------------ | --------------------- | ------------- | --- |
+| **Must Have** |                                            |                                                                          |                       |               |     |
+|               | **plan**                                   |                                                                          |                       |               |     |
+|               |                                            | Design , Choose & explore the technologies and packages I will be useing | :white_check_mark:    | **~16 hours** |     |
+|               |                                            |                                                                          |                       |               |     |
+|               | **Generate html from data using template** | →service classe that recive data and return html                         |                       |               |     |
+|               |                                            | create template component                                                | :white_check_mark:    | **9 hours**   |     |
+|               |                                            | add function to template component→ check if page is "Cont"              | :black_square_button: | **9 hours**   |     |
+|               |                                            | use ssr render to generate html string                                   | :white_check_mark:    | **5 hours**   |     |
+|               |                                            | create header component                                                  | :white_check_mark:    | **4 hours**   |     |
+|               |                                            | build functionality to header component-stamp Page X of Y                | :black_square_button: | **9 hours**   |     |
+|               |                                            | create footer component                                                  | :black_square_button: | **4 hours**   |     |
+|               |                                            | create Cover Page component                                              | :black_square_button: | **3 hours**   |     |
+|               |                                            | create T.O.C component                                                   | :black_square_button: | **9 hours**   |     |
+|               |                                            | accessibility -According to the standard and the requirements of the law | :black_square_button: | TBD           |     |
+|               | **pdf Generator**                          |                                                                          |                       |               |     |
+|               |                                            | use puppeteer package to generate pdf from recived html                  | :white_check_mark:    | **9 hours**   |     |
+|               |                                            |                                                                          |                       |               |     |
+|               | **Rest Service**                           |                                                                          |                       |               |     |
+|               |                                            | Create Rest Service that will manage pdf generation                      | :white_check_mark:    | **6 hours**   |     |
+|               |                                            |                                                                          |                       |               |     |
+|               | **Deployment Production Preparation**      |                                                                          |                       |               |     |
+|               |                                            | Testing localy-call from diffrent browser/api crate banxh of file        | :black_square_button: | **2-3 hours** |     |
+|               |                                            | load the project to server                                               | :black_square_button: | **2 hours**   |     |
+|               |                                            | Testing -on server (using the tools create for local test)               | :black_square_button: | **1 hours**   |     |
+
 <hr >
 
 ## Server API Endpoints
@@ -99,32 +128,3 @@ This will start the server on port 8000 on your local machine
 - style-loader
 - css-loader
 - puppeteer
-
-## **Timeline**
-
-| Type          | Feature                                    | Task                                                                     | Done                  | Time          | Day |
-| ------------- | ------------------------------------------ | ------------------------------------------------------------------------ | --------------------- | ------------- | --- |
-| **Must Have** |                                            |                                                                          |                       |               |     |
-|               | **plan**                                   |                                                                          |                       |               |     |
-|               |                                            | Design , Choose & explore the technologies and packages I will be useing | :white_check_mark:    | **~16 hours** |     |
-|               |                                            |                                                                          |                       |               |     |
-|               | **Generate html from data using template** | →service classe that recive data and return html                         |                       |               |     |
-|               |                                            | create template component                                                | :white_check_mark:    | **9 hours**   |     |
-|               |                                            | add function to template component→ check if page is "Cont"              | :black_square_button: | **9 hours**   |     |
-|               |                                            | use ssr render to generate html string                                   | :white_check_mark:    | **5 hours**   |     |
-|               |                                            | create header component                                                  | :white_check_mark:    | **4 hours**   |     |
-|               |                                            | build functionality to header component-stamp Page X of Y                | :black_square_button: | **9 hours**   |     |
-|               |                                            | create footer component                                                  | :black_square_button: | **4 hours**   |     |
-|               |                                            | create Cover Page component                                              | :black_square_button: | **3 hours**   |     |
-|               |                                            | create T.O.C component                                                   | :black_square_button: | **9 hours**   |     |
-|               |                                            | accessibility -According to the standard and the requirements of the law | :black_square_button: | TBD           |     |
-|               | **pdf Generator**                          |                                                                          |                       |               |     |
-|               |                                            | use puppeteer package to generate pdf from recived html                  | :white_check_mark:    | **9 hours**   |     |
-|               |                                            |                                                                          |                       |               |     |
-|               | **Rest Service**                           |                                                                          |                       |               |     |
-|               |                                            | Create Rest Service that will manage pdf generation                      | :white_check_mark:    | **6 hours**   |     |
-|               |                                            |                                                                          |                       |               |     |
-|               | **Deployment Production Preparation**      |                                                                          |                       |               |     |
-|               |                                            | Testing localy-call from diffrent browser/api crate banxh of file        | :black_square_button: | **2-3 hours** |     |
-|               |                                            | load the project to server                                               | :black_square_button: | **2 hours**   |     |
-|               |                                            | Testing -on server (using the tools create for local test)               | :black_square_button: | **1 hours**   |     |
