@@ -94,7 +94,7 @@ MediaRecorder.pdf = pdf;
 | -------------------- | --------- | ---------------------------- | ----------------------- | ------------- |
 | Route                | Method    | Body                         | Success                 | Errors        |
 | -------------------- | --------- | ---------------------------- | ----------------------- | ------------- |
-| `/api`               | `POST`    | {json}                       | { blob } -200           | 400 ,500      |
+| `/`                  | `POST`    | {json}                       | { blob } -200           | 400 ,500      |
 
 You can find here an example of the structures **[JSON passed](./docs/body_request_example)** as a parameter
 
