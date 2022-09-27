@@ -64,7 +64,6 @@ MediaRecorder.pdf = pdf;
 | **Must Have** |                                            |                                                                          |                       |               |     |
 |               | **plan**                                   |                                                                          |                       |               |     |
 |               |                                            | Design , Choose & explore the technologies and packages I will be useing | :white_check_mark:    | **~16 hours** |     |
-|               |                                            |                                                                          |                       |               |     |
 |               | **Generate html from data using template** | →service classe that recive data and return html                         |                       |               |     |
 |               |                                            | create template component                                                | :white_check_mark:    | **9 hours**   |     |
 |               |                                            | add function to template component→ check if page is "Cont"              | :black_square_button: | **9 hours**   |     |
@@ -77,10 +76,8 @@ MediaRecorder.pdf = pdf;
 |               |                                            | accessibility -According to the standard and the requirements of the law | :black_square_button: | **TBD**       |     |
 |               | **pdf Generator**                          |                                                                          |                       |               |     |
 |               |                                            | use puppeteer package to generate pdf from recived html                  | :white_check_mark:    | **9 hours**   |     |
-|               |                                            |                                                                          |                       |               |     |
 |               | **Rest Service**                           |                                                                          |                       |               |     |
 |               |                                            | Create Rest Service that will manage pdf generation                      | :white_check_mark:    | **6 hours**   |     |
-|               |                                            |                                                                          |                       |               |     |
 |               | **Deployment Production Preparation**      |                                                                          |                       |               |     |
 |               |                                            | Testing localy-call from diffrent browser/api crate banxh of file        | :black_square_button: | **2-3 hours** |     |
 |               |                                            | load the project to server                                               | :black_square_button: | **2 hours**   |     |
