@@ -50,7 +50,26 @@ MediaRecorder.pdf = pdf;
 
 <span style="color: #177187">
 
-## סיבות לבחירת בטכנולוגיות הנ"ל:
+## סיבות לבחירה הטכנולוגית :
+
+בחרתי ליישם את התוכנית בטכנולוגיות ReactJS ,NodeJS, SSR ,Rest API.
+
+**-Rest API**
+
+כאשר אני בוחר בשירות נפרד זה מאפשר לכל שירות ושפה להתממשק אל התוכנית ולבצע בקלות קריאות API והשירות נגיש מכל מקום.
+
+**-SSR-SERVER-SIDE RENDERING**
+
+הסיבה לבחירה ב SSR היא כי הוא מפשט מאוד את תהליך הבניה של התבניות / templates ומאפשר הרחבה עתידית של התבניות ותחזוקת הקוד באופן קל ופשוט .
+הייתי יכול לייצר תבניות דרך חבילות כמו jspdf או pdfkey אבל הם יותר מורכבות וסקריפטיות והרבה פחות ברורות . אז המסמך היה מוצג באופן הרבה יותר מוקשח וכל תוספת עתידית או תחזוקה הייתה לוקחת הקבה זמן כמעט כמו לבנות את כל המערכת מחדש . עצם העובדה שאני כותב תבנית דרך קומפוננטות ריאקט בSSR והופך אותם לPDF ,מקל משמעותית על הפיתוח והופך את תחזוקת הקוד לקלה ופשוטה .
+
+**-NodeJS**
+
+תהיה תמיד בחירה טובה למימוש של SSR במיוחד למימוש PDF כי יש לה חבילות מובנות שנתמכות הרבה מאוד זמן והרבה יותר נוח ופשוט להשתמש בהם. כמובן גם בגלל שכל הקוד נכתב באותה השפה JS .
+
+**-ReactJS**
+
+היא שפה מאוד נוחה לכתיבת של UI פשוט היא קלה לכתיבה ופחות מורכבת מאשר angular או Vue ועוד . עצם העובדה שיש ל react תמיכה מובנית מלאה בSSR דרך חבילה react-dom-server מקל מאוד על תהליך היצירה . בנוסף react היא שפה מאוד פופלרית ורלוונטית והמון פרויקטים חדשים נכתבים בשפה זו .בשל העובדה שהיא גם מאוד נפוצה הבחירה בה תהיה טובה כי זה אומר שיותר אנשים יוכלו לתוך בקוד ולתחזק אותו .
 
 </span>
 
@@ -59,29 +78,31 @@ MediaRecorder.pdf = pdf;
 
 ## **Timeline**
 
-| Type          | Feature                                    | Task                                                                     | Done                  | Time          | Day |
-| ------------- | ------------------------------------------ | ------------------------------------------------------------------------ | --------------------- | ------------- | --- |
-| **Must Have** |                                            |                                                                          |                       |               |     |
-|               | **plan**                                   |                                                                          |                       |               |     |
-|               |                                            | Design , Choose & explore the technologies and packages I will be useing | :white_check_mark:    | **~16 hours** |     |
-|               | **Generate html from data using template** | →service classe that recive data and return html                         |                       |               |     |
-|               |                                            | create template component                                                | :white_check_mark:    | **9 hours**   |     |
-|               |                                            | add function to template component→ check if page is "Cont"              | :black_square_button: | **9 hours**   |     |
-|               |                                            | use ssr render to generate html string                                   | :white_check_mark:    | **5 hours**   |     |
-|               |                                            | create header component                                                  | :white_check_mark:    | **4 hours**   |     |
-|               |                                            | build functionality to header component-stamp Page X of Y                | :black_square_button: | **9 hours**   |     |
-|               |                                            | create footer component                                                  | :black_square_button: | **4 hours**   |     |
-|               |                                            | create Cover Page component                                              | :black_square_button: | **3 hours**   |     |
-|               |                                            | create T.O.C component                                                   | :black_square_button: | **9 hours**   |     |
-|               |                                            | accessibility -According to the standard and the requirements of the law | :black_square_button: | **TBD**       |     |
-|               | **pdf Generator**                          |                                                                          |                       |               |     |
-|               |                                            | use puppeteer package to generate pdf from recived html                  | :white_check_mark:    | **9 hours**   |     |
-|               | **Rest Service**                           |                                                                          |                       |               |     |
-|               |                                            | Create Rest Service that will manage pdf generation                      | :white_check_mark:    | **6 hours**   |     |
-|               | **Deployment Production Preparation**      |                                                                          |                       |               |     |
-|               |                                            | Testing localy-call from diffrent browser/api crate banxh of file        | :black_square_button: | **2-3 hours** |     |
-|               |                                            | load the project to server                                               | :black_square_button: | **2 hours**   |     |
-|               |                                            | Testing -on server (using the tools create for local test)               | :black_square_button: | **1 hours**   |     |
+| Type          | Feature                                    | Task                                                                                | Done                  | Time          | Day |
+| ------------- | ------------------------------------------ | ----------------------------------------------------------------------------------- | --------------------- | ------------- | --- |
+| **Must Have** |                                            |                                                                                     |                       |               |     |
+|               | **plan**                                   |                                                                                     |                       |               |     |
+|               |                                            | Design , Choose & explore the technologies and packages I will be useing            | :white_check_mark:    | **~16 hours** |     |
+|               | **creat http request data template**       |                                                                                     |                       |               |     |
+|               |                                            | Understanding how data is represented so react component will know how to deploy it | :white_check_mark:    | **18 hours**  |     |
+|               | **Generate html from data using template** | →service classe that recive data and return html                                    |                       |               |     |
+|               |                                            | create template component                                                           | :white_check_mark:    | **9 hours**   |     |
+|               |                                            | add function to template component→ check if page is "Cont"                         | :black_square_button: | **9 hours**   |     |
+|               |                                            | use ssr render to generate html string                                              | :white_check_mark:    | **5 hours**   |     |
+|               |                                            | create header component                                                             | :white_check_mark:    | **4 hours**   |     |
+|               |                                            | build functionality to header component-stamp Page X of Y                           | :black_square_button: | **9 hours**   |     |
+|               |                                            | create footer component                                                             | :black_square_button: | **4 hours**   |     |
+|               |                                            | create Cover Page component                                                         | :black_square_button: | **3 hours**   |     |
+|               |                                            | create T.O.C component                                                              | :black_square_button: | **9 hours**   |     |
+|               |                                            | accessibility -According to the standard and the requirements of the law            | :black_square_button: | **TBD**       |     |
+|               | **pdf Generator**                          |                                                                                     |                       |               |     |
+|               |                                            | use puppeteer package to generate pdf from recived html                             | :white_check_mark:    | **9 hours**   |     |
+|               | **Rest Service**                           |                                                                                     |                       |               |     |
+|               |                                            | Create Rest Service that will manage pdf generation                                 | :white_check_mark:    | **6 hours**   |     |
+|               | **Deployment Production Preparation**      |                                                                                     |                       |               |     |
+|               |                                            | load the project to server                                                          | :black_square_button: | **2 hours**   |     |
+|               |                                            | Testing & qa                                                                        | :black_square_button: | **18 hours**  |     |
+|               | **Total Hours**                            |                                                                                     |                       |               |     |
 
 <hr >
 
@@ -99,15 +120,19 @@ You can find here an example of the structures **[JSON passed](./docs/body_reque
 
 ![request](./docs/screenshots/postman_request_1.png)
 
-## Build process
+## Run & Build process
 
-Run the build npm script, then the server script
+1. clone this repo to your local machine
+2. you must have NODE installed on your machine if not download it **→[NODE](https://nodejs.org/en/download/)**
+3. `npm install ` to install all dependency
+4. Run the build npm script `npm run build`
+5. Run the server script `npm run ssr`
 
-`npm run build`
+This process will start the server on port 8000 on your local machine
 
-`npm run ssr`
+## How to use
 
-This will start the server on port 8000 on your local machine
+after server run, you can sent POST request to you loacalhoat:8000 and pass json object
 
 ## Technologies
 
