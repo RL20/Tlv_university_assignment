@@ -1,5 +1,4 @@
 import express from "express";
-import fs from "fs";
 import path from "path";
 
 import React from "react";
@@ -14,7 +13,7 @@ const PORT = 8000;
 
 const app = express();
 app.use(express.json());
-// Example of JSON format needed to be passed in the request body  You can see the root folder under the name → body_request_example
+// Example of JSON format needed to be passed in the request body  You can see the /docs folder under the name → body_request_example
 app.use("^/$", async (req, res, next) => {
   //let jsonData = fetch data
   let template = ReactDOMServer.renderToString(<App generalExplanation={req.body} />);
@@ -37,5 +36,3 @@ app.use(express.static(path.resolve(__dirname, "..", "build")));
 app.listen(PORT, () => {
   console.log(`App launched on ${PORT}`);
 });
-
-// This is example of the JSON request body formay ↓↓↓
