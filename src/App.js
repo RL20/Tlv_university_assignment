@@ -6,7 +6,7 @@ import titles from "./api/JSONS/titles";
 import parse from "html-react-parser";
 import "./App.css";
 
-function App({generalExplanation}) {
+function App({ generalExplanation }) {
   const shnotLimud = generalExplanation.data.results.body[0].mivnelimudim.map((year, i) => {
     return (
       <div className="generalExplanation" key={i}>
@@ -54,7 +54,7 @@ function App({generalExplanation}) {
   //     </div>
   //     <h3 className="mainDescription_titles">{titles.data.configuration.body.data.tabs.GeneralExplanation.degreeStructure}</h3>
   //     <div>{shnotLimud}</div>
-  //     {/* 
+  //     {/*
   //     <h4> {titles.data.configuration.body.data.tabs.GeneralExplanation.degreeTotalHours}</h4>
   //     <div>{generalExplanation.data.results.body[0].michsa}</div> */}
   //     <div className="inner-2 align-items-baseline  mt-5 mb-3 row">
@@ -71,6 +71,5 @@ function App({generalExplanation}) {
   //   </div>
   // );
 }
-
 
 export default App;

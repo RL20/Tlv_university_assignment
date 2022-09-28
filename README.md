@@ -84,7 +84,7 @@ MediaRecorder.pdf = pdf;
 |               | **Plan**                                     |                                                                                     |                       |               |     |
 |               |                                              | Design, Choose & explore the technologies and packages I will be using              | :white_check_mark:    | **~16 hours** |     |
 |               | **Create HTTP request data template**        |                                                                                     |                       |               |     |
-|               |                                              | Understanding how data is represented so react component will know how to deploy it | :white_check_mark:    | **18 hours**  |     |
+|               |                                              | Understanding how data is represented so react component will know how to deploy it | :black_square_button: | **18 hours**  |     |
 |               | **Generate HTML from data using a template** | →a service class that receives data and returns HTML                                |                       |               |     |
 |               |                                              | create template component                                                           | :white_check_mark:    | **9 hours**   |     |
 |               |                                              | add function to template component→ check if a page is "Cont"                       | :black_square_button: | **9 hours**   |     |
